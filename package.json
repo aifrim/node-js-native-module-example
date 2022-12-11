@@ -1,0 +1,15 @@
+{
+    "name": "node-js-native-module-example",
+    "private": true,
+    "version": "0.0.1-alpha.0",
+    "main": "build/Release/node-js-native-module-example",
+    "scripts": {
+        "build": "node-gyp rebuild --release",
+        "install": "yarn build"
+    },
+    "gypfile": true,
+    "dependencies": {
+        "isolated-vm": "4.3.2",
+        "nan": "^2.10.0"
+    }
+}
